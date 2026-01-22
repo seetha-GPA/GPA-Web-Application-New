@@ -1,1 +1,7 @@
+GPA-Web-Page/
+node_modules/
+.env
+.DS_Store
+dist/
+build/
 
