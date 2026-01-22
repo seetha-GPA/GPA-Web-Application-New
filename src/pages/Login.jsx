@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import API_BASE_URL from '../config/api';
+import studentImg from '../../public/images/student.png';
+import logoImg from '../../public/images/growthpulse-logo.png';
+import roboImg from '../../public/images/login-robo.png';
 
 const Login = () => {
     const navigate = useNavigate();
@@ -89,7 +92,7 @@ const Login = () => {
                     }}
                 >
                     <img
-                        src="/images/student.png"
+                        src={studentImg}
                         alt="Student"
                         className="w-full h-full object-cover"
                     />
@@ -107,7 +110,7 @@ const Login = () => {
                     }}
                 >
                     <img
-                        src="/images/growthpulse-logo.png"
+                        src={logoImg}
                         alt="Logo"
                         className="w-full h-full object-contain"
                     />
@@ -346,7 +349,7 @@ const Login = () => {
                     }}
                 >
                     <img
-                        src="/images/login-robo.png"
+                        src={roboImg}
                         alt="Robot"
                         className="w-full h-full object-contain"
                     />
