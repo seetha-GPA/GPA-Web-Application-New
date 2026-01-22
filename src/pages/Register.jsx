@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import API_BASE_URL from '../config/api';
 
 const Register = () => {
     const navigate = useNavigate();
@@ -29,7 +30,7 @@ const Register = () => {
         setMessage({ type: '', text: '' });
 
         try {
-            const response = await fetch('http://localhost:5000/api/register', {
+            const response = await fetch(`${API_BASE_URL}/api/register`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
